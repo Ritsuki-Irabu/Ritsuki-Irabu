@@ -6,7 +6,7 @@ PHP / Laravelを中心に、Webアプリケーション開発を学習・実践�
 ## About
 
 Laravel APIとVue.jsを組み合わせた個人開発を通じて、認証・認可、CRUD、バリデーション、DB操作、画面連携を実装しています。  
-PHPUnitのFeature TestとPlaywrightによるブラウザテストを使い、正常系だけでなく、認証・認可、入力エラー、API失敗時の画面挙動も確認しています。  
+結合テストの設計・確認に加え、PHPUnitのFeature TestとPlaywrightによるブラウザテストを使い、正常系だけでなく、認証・認可、入力エラー、API失敗時の画面挙動も確認しています。  
 現在は、既存コードの処理フローを読み解き、テストを根拠に安全に小さな改善を積み重ねる力を深めています。
 
 ## Core Skills
@@ -25,12 +25,13 @@ PHPUnitのFeature TestとPlaywrightによるブラウザテストを使い、正
 
 ### Testing
 
+- Integration Testing
+  - 画面・API・DBなどのつながりを対象とした、入出力・状態・データ反映の確認
+  - 正常系・異常系・権限・前提条件を整理したテストケース設計
 - PHPUnit Feature Test
   - 認証・認可、CRUD、バリデーション、DB更新の確認
 - Playwright ブラウザテスト
   - 画面遷移、主要操作、エラー表示の回帰確認
-- テストケース設計
-  - 正常系・異常系・権限別シナリオの整理
 
 ### Frontend
 
@@ -88,7 +89,7 @@ Java / Spring Boot / Spring Data JPA / H2を使用し、Entityのリレーショ
 主なテーマ：
 
 - Laravel / API / Eloquent
-- Testing / Playwright
+- Testing / Integration Testing / Playwright
 - Docker / WSL2
 - Git / GitHub
 - Java / Spring Boot
@@ -97,6 +98,6 @@ Java / Spring Boot / Spring Data JPA / H2を使用し、Entityのリレーショ
 ## Currently Focusing On
 
 - Laravel既存コードの読解と、画面・API・DB間の変更影響分析
-- PHPUnit Feature TestとPlaywrightによる回帰確認
+- Integration Testingによる機能間・データ間の整合性確認と、PHPUnit Feature Test・Playwrightによる回帰確認
 - 認証・認可、Validation、CRUD周辺の不具合調査と小規模改修
 - Webアプリケーションの責務分離と保守しやすい設計
