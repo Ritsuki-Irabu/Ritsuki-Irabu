@@ -1,12 +1,12 @@
-# Ritsuki | Web Developer
+# Ritsuki | PHP / Laravel × Testing
 
 PHP / Laravelを中心に、Webアプリケーション開発を学習・実践しています。  
-テスト経験を活かし、仕様確認・動作検証から既存機能の小規模な改善まで、一貫して対応できるエンジニアを目指しています。
+テスト観点を活かし、仕様確認・動作検証・既存機能の小規模な改善を、変更影響を確認しながら進めることを重視しています。
 
 ## About
 
 Laravel APIとVue.jsを組み合わせた個人開発を通じて、認証・認可、CRUD、バリデーション、DB操作、画面連携を実装しています。  
-PHPUnitのFeature TestとPlaywrightのE2Eテストを使い、正常系だけでなく、認証・認可、入力エラー、API失敗時の挙動も確認しています。  
+PHPUnitのFeature TestとPlaywrightによるブラウザテストを使い、正常系だけでなく、認証・認可、入力エラー、API失敗時の画面挙動も確認しています。  
 現在は、既存コードの処理フローを読み解き、テストを根拠に安全に小さな改善を積み重ねる力を深めています。
 
 ## Core Skills
@@ -27,8 +27,8 @@ PHPUnitのFeature TestとPlaywrightのE2Eテストを使い、正常系だけで
 
 - PHPUnit Feature Test
   - 認証・認可、CRUD、バリデーション、DB更新の確認
-- Playwright E2E
-  - 画面遷移、主要操作、エラー表示の回帰テスト
+- Playwright ブラウザテスト
+  - 画面遷移、主要操作、エラー表示の回帰確認
 - テストケース設計
   - 正常系・異常系・権限別シナリオの整理
 
@@ -60,7 +60,7 @@ Laravel API + Vue.js SPA構成で、曲マスタとマイリストの管理、�
 - Laravel Sanctumによる認証、Role / Policyによる操作権限の制御
 - EloquentのリレーションとMigrationによるデータ設計
 - Vue.js、Pinia、Axios、Vue RouterによるSPA画面と状態管理
-- PHPUnit Feature Testと、認証・認可・CRUD・エラー表示を含むPlaywright E2Eテスト
+- PHPUnit Feature Testと、認証・認可・CRUD・エラー表示を確認するPlaywrightブラウザテスト
 
 主な技術：PHP / Laravel / Vue.js / MySQL / Docker / PHPUnit / Playwright
 
@@ -73,10 +73,11 @@ Laravel API + Vue.js SPA構成で、曲マスタとマイリストの管理、�
 思考ログをAIで分析し、思考傾向を可視化するWebアプリケーションです。  
 Next.js / TypeScript / Auth.js / Prisma / PostgreSQLを使用し、認証付きAPI、ログ保存、Gemini API連携、スコア表示を実装しています。
 
-### [汎用業務報告ジェネレーター](https://github.com/Ritsuki-Irabu/report-generator-app)
+### [KPI管理API](https://github.com/Ritsuki-Irabu/kpi-api)
 
-入力した件数とメモから業務報告文を生成し、履歴の表示・編集を行うWebアプリケーションです。  
-Java / Spring Boot / Thymeleaf / HTML / CSS / JavaScript / Mavenを使用しています。
+ユーザー、KGI、KPI、日々の進捗記録を階層的に管理するREST APIです。  
+Java / Spring Boot / Spring Data JPA / H2を使用し、Entityのリレーション、Request / Response DTOの分離、データの作成・取得・削除APIを実装しています。  
+[実装コード（feature/apiブランチ）](https://github.com/Ritsuki-Irabu/kpi-api/tree/feature/api)
 
 ## Learning & Engineering Notes
 
@@ -95,8 +96,7 @@ Java / Spring Boot / Thymeleaf / HTML / CSS / JavaScript / Mavenを使用して�
 
 ## Currently Focusing On
 
-- Laravelの既存コードを読み、画面・API・DB間の処理フローを説明できる状態にする
-- PHPUnit Feature TestとE2Eテストを使った変更影響の確認
-- 認証・認可、Validation、CRUD周辺の不具合調査と小規模な改修
-- Webアプリケーション設計と、責務ごとのコード分割への理解を深める
-
+- Laravel既存コードの読解と、画面・API・DB間の変更影響分析
+- PHPUnit Feature TestとPlaywrightによる回帰確認
+- 認証・認可、Validation、CRUD周辺の不具合調査と小規模改修
+- Webアプリケーションの責務分離と保守しやすい設計
